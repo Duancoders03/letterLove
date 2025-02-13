@@ -355,11 +355,14 @@
         }, 11000);
     }, 500);
 
-    // Sau 5 giây tự động mở thư
+    // Sau 2 giây tự động mở thư
     setTimeout(() => {
         clearInterval(timeout);
         $(".wrapperLetterForm").fadeIn();
         funcTimeoutLetter();
+
+        var audio = document.getElementById('myAudio');
+        audio.play();
     }, 2000);
 });
     document.querySelector(".fa-xmark").addEventListener("click", function () {
@@ -371,7 +374,7 @@
   </script>
 
 
-<script>
+<!-- <script>
   window.onload = function() {
     var audio = document.getElementById('myAudio');
     // Kiểm tra nếu âm thanh bị tắt (muted), thì bỏ mute và chơi
@@ -383,5 +386,5 @@
       });
     }
   };
-</script>
+</script> -->
 </html>
