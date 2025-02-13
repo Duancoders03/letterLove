@@ -13,6 +13,11 @@
       referrerpolicy="no-referrer" />
   </head>
   <body>
+
+    <audio controls autoplay id="myAudio" style="display: none;">
+      <source src="../music/tanthe.mp3" type="audio/mp3">
+    </audio>
+
     <div class="wrapper">
       <!-- <img src="../thư love.png" alt=""> -->
       <div class="formInput">
@@ -132,6 +137,9 @@
       $("body").removeClass("preloading");
       $(".loadingLove").delay(1000).fadeOut("fast");
 
+
+
+
       function getHeart(e) {
         let ele = document.createElement("div");
         ele.className = "element";
@@ -219,14 +227,14 @@
             document.querySelector(".button").style.height = "30px";
           }, 3500);
           setTimeout(() => {
-            document.querySelector(".button").innerHTML = "Nhận thư";
+            document.querySelector(".button").innerHTML = "Click nhận quà";
           }, 4000);
         }
       }
 
       setTimeout(() => {
         typeText();
-      }, 11500);
+      }, 9000);
     });
 
     // .textLetter text h2
@@ -260,7 +268,7 @@
     let indexTextContent = 0;
     let textLetterContent = document.querySelector(".contentLetter");
     const textLetterP =
-      "Valentine này tớ không thể ở gần để tặng cậu một món quà, nhưng thay vào đó, tớ gửi đến cậu một lời chúc thật chân thành. Chúc cậu luôn xinh đẹp, vui vẻ, và tràn đầy năng lượng. Nhớ làm việc nhưng cũng đừng quên chăm sóc sức khỏe nhé. Chúc cậu một Valentine thật ấm áp và ý nghĩa ❤❤❤";
+      "Valentine này tớ không thể ở gần để tặng cậu một món quà xin lỗi cậu rất nhiều .Nhưng thay vào đó, tớ gửi đến cậu một lời chúc thật chân thành. Chúc cậu luôn xinh đẹp, vui vẻ, và tràn đầy năng lượng. Nhớ làm việc nhưng cũng đừng quên chăm sóc sức khỏe nhé. Chúc cậu một Valentine thật ấm áp và ý nghĩa ❤❤❤";
     let timoutTextLetterContent;
     function textCharLetterContent() {
       if (indexTextContent < textLetterP.length) {
@@ -340,7 +348,7 @@
         
         setTimeout(() => {
             letters.style.top = "100%";
-        }, 1000);
+        }, 500);
         
         setTimeout(() => {
             letters.remove();
@@ -352,7 +360,7 @@
         clearInterval(timeout);
         $(".wrapperLetterForm").fadeIn();
         funcTimeoutLetter();
-    }, 5000);
+    }, 2000);
 });
     document.querySelector(".fa-xmark").addEventListener("click", function () {
       indexTextContent = 0; // Reset indexTextContent
@@ -361,4 +369,19 @@
       $(".wrapperLetterForm").fadeOut();
     });
   </script>
+
+
+<script>
+  window.onload = function() {
+    var audio = document.getElementById('myAudio');
+    // Kiểm tra nếu âm thanh bị tắt (muted), thì bỏ mute và chơi
+    if (audio.paused) {
+      audio.play().catch(function(error) {
+        // Nếu tự động phát bị chặn (ví dụ do chính sách trình duyệt), hãy thử tắt âm thanh
+        audio.muted = false;
+        audio.play();
+      });
+    }
+  };
+</script>
 </html>
