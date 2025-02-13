@@ -571,6 +571,7 @@ body{
     z-index: 100;
     padding: 20px 15px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
 }
 .formLetter .wrapperLetter{
     position: relative;
@@ -667,8 +668,8 @@ body{
 }
 .fa-xmark{
     position: absolute;
-    right: 20px;
-    top: 20px;
+    right: 10px;
+    top: 15px;
     color: #fff;
     cursor: pointer;
     font-size: 25px;
@@ -702,3 +703,252 @@ body{
 
 
 
+/* Media Query cho màn hình nhỏ hơn 768px */
+@media screen and (max-width: 768px) {
+    .formInput {
+        width: 80%;
+        top: 10%;
+        padding: 10px;
+    }
+
+    .boxHands {
+        top: 10%;
+    }
+
+    .boxSlider {
+        margin-top: 40px;
+    }
+
+    .boxSlider .left, .boxSlider .right {
+        font-size: 25px;
+        left: 20px;
+        right: 20px;
+    }
+
+    .listSlider {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .boxHandsInput {
+        width: 90%;
+        right: -100%;
+    }
+
+    .boxHandsInput input {
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    .buttonLove {
+        width: 40px;
+        height: 40px;
+        transform: translateY(0);
+    }
+
+    .heart1, .heart2, .heart3, .heart4, .heart5, .heart6 {
+        width: 12px;
+        height: 12px;
+        bottom: 15%;
+    }
+
+    .boxCar img {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .boxHeart {
+        height: auto;
+    }
+
+    .ground-line div {
+        margin-right: 15px;
+    }
+
+    .rhombus {
+        height: 50px;
+        width: 50px;
+    }
+
+    .rhombus .circle1, .rhombus .circle2 {
+        height: 30px;
+        width: 30px;
+    }
+
+    .letters {
+        width: 50px;
+    }
+
+    .wrapperLetterForm .boxLetter {
+        width: 90%;
+        height: auto;
+        padding: 5px;
+        position: absolute;
+        top: 20%;
+        left: 0;
+    }
+
+    .boxLetter .formLetter {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .boxLetter .before {
+        width: 90%;
+        height: auto;
+    }
+
+    .textLetter h2 {
+        font-size: 24px;
+    }
+
+    .textLetter .contentLetter {
+        font-size: 16px;
+    }
+
+    .heartLetter {
+        font-size: 18px;
+    }
+
+
+    .giftbox{
+        position: relative;
+        width: 40%;
+        height: 100%;
+    }
+    .giftbox .img{
+        position: absolute;
+        top: 10%;
+        width: 180px;
+        bottom: -10px;
+        left: 50px;
+        z-index: 100;
+    }
+    .giftbox .img {
+        width: 80px;
+    }
+}
+
+/* Media Query cho màn hình nhỏ hơn 480px */
+@media screen and (max-width: 480px) {
+    .formInput {
+        width: 90%;
+        top: 5%;
+    }
+
+    .boxHands {
+        top: 0;
+    }
+
+    .boxSlider {
+        margin-top: 70px;
+    }
+
+    .boxSlider .left, .boxSlider .right {
+        font-size: 20px;
+        left: 10px;
+        right: 10px;
+    }
+
+    .listSlider {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .boxHandsInput {
+        width: 90%;
+        right: -50%;
+    }
+
+    .boxHandsInput input {
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    .buttonLove {
+        width: 30px;
+        height: 30px;
+        transform: translateY(0);
+    }
+
+    .heart1, .heart2, .heart3, .heart4, .heart5, .heart6 {
+        width: 10px;
+        height: 10px;
+        bottom: 10%;
+    }
+
+    .boxCar img {
+        width: 80%;
+    }
+
+    .boxHeart {
+        height: auto;
+    }
+
+    .ground-line div {
+        margin-right: 10px;
+    }
+
+    .rhombus {
+        height: 45px;
+        width: 45px;
+    }
+
+    .rhombus .circle1, .rhombus .circle2 {
+        height: 25px;
+        width: 25px;
+    }
+
+    .letters {
+        width: 40px;
+    }
+
+    .wrapperLetterForm .boxLetter {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .boxLetter .formLetter {
+        width: 90%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .boxLetter .before {
+        width: 90%;
+        height: auto;
+    }
+
+    .textLetter h2 {
+        font-size: 20px;
+    }
+
+    .textLetter .contentLetter {
+        font-size: 14px;
+    }
+
+    .heartLetter {
+        font-size: 16px;
+    }
+
+    .giftbox{
+        position: relative;
+        width: 40%;
+        height: 100%;
+    }
+    .giftbox .img{
+        position: absolute;
+        top: 10%;
+        width: 180px;
+        bottom: -10px;
+        left: 50px;
+        z-index: 100;
+    }
+
+    .giftbox .img {
+        width: 60px;
+        margin-top: 10px;
+    }
+}
